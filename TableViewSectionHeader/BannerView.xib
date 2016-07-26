@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="BannerView" customClass="BannerView" customModule="TableViewSectionHeader" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="272" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9NY-ck-rKf">
+                    <rect key="frame" x="55" y="20" width="183" height="20"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="excl" translatesAutoresizingMaskIntoConstraints="NO" id="Eto-78-j4I">
+                            <rect key="frame" x="0.0" y="1" width="20" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="E1B-3o-sM0"/>
+                                <constraint firstAttribute="height" constant="18" id="Zdd-PE-bG2"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No network reachability" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gB4-xM-Omj" userLabel="bannerLabel">
+                            <rect key="frame" x="30" y="2" width="153" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="L4r-wx-jlh"/>
+                        <constraint firstItem="gB4-xM-Omj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Eto-78-j4I" secondAttribute="trailing" constant="5" id="fwz-cg-2hM"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="fwz-cg-2hM"/>
+                        </mask>
+                    </variation>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.34509803921568627" green="0.35686274509803922" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="9NY-ck-rKf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="4Av-Tc-LdI"/>
+                <constraint firstItem="9NY-ck-rKf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="k8L-hg-q2X"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bannerLabel" destination="gB4-xM-Omj" id="MIZ-5Q-Nbt"/>
+                <outlet property="exclamationImageView" destination="Eto-78-j4I" id="aRb-DH-6wh"/>
+            </connections>
+            <point key="canvasLocation" x="388" y="99"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="excl" width="817" height="720"/>
+    </resources>
+</document>

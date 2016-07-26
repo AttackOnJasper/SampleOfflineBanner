@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC220EEE1D47DB1E00EB9450 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC220EEC1D47DB1E00EB9450 /* BannerView.swift */; };
+		EC220EEF1D47DB1E00EB9450 /* BannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC220EED1D47DB1E00EB9450 /* BannerView.xib */; };
 		ECA4C5E41D32E3D9005903F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA4C5E31D32E3D9005903F4 /* AppDelegate.swift */; };
 		ECA4C5E61D32E3D9005903F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA4C5E51D32E3D9005903F4 /* ViewController.swift */; };
 		ECA4C5E91D32E3D9005903F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA4C5E71D32E3D9005903F4 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC220EEC1D47DB1E00EB9450 /* BannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		EC220EED1D47DB1E00EB9450 /* BannerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BannerView.xib; sourceTree = "<group>"; };
 		ECA4C5E01D32E3D9005903F4 /* TableViewSectionHeader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewSectionHeader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA4C5E31D32E3D9005903F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECA4C5E51D32E3D9005903F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 		ECA4C5E21D32E3D9005903F4 /* TableViewSectionHeader */ = {
 			isa = PBXGroup;
 			children = (
+				EC220EEC1D47DB1E00EB9450 /* BannerView.swift */,
+				EC220EED1D47DB1E00EB9450 /* BannerView.xib */,
 				ECA4C5E31D32E3D9005903F4 /* AppDelegate.swift */,
 				ECA4C5E51D32E3D9005903F4 /* ViewController.swift */,
 				ECA4C5E71D32E3D9005903F4 /* Main.storyboard */,
@@ -128,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC220EEF1D47DB1E00EB9450 /* BannerView.xib in Resources */,
 				ECA4C5EE1D32E3D9005903F4 /* LaunchScreen.storyboard in Resources */,
 				ECA4C5EB1D32E3D9005903F4 /* Assets.xcassets in Resources */,
 				ECA4C5E91D32E3D9005903F4 /* Main.storyboard in Resources */,
@@ -141,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC220EEE1D47DB1E00EB9450 /* BannerView.swift in Sources */,
 				ECA4C5E61D32E3D9005903F4 /* ViewController.swift in Sources */,
 				ECA4C5F61D32E3FB005903F4 /* MyTableViewController.swift in Sources */,
 				ECA4C5F81D32EEA2005903F4 /* Reachability.swift in Sources */,
@@ -294,6 +302,7 @@
 				ECA4C5F41D32E3D9005903F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

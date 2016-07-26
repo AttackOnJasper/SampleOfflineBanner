@@ -49,9 +49,8 @@ class MyTableViewController: UITableViewController, BannerDelegate {
     
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if (section == 0 && self.shouldShowHeader){
-            let headerView = UIView(frame: CGRect(x: 0,y: 0,width: 100,height: 20))
-            headerView.backgroundColor = UIColor.blueColor()
-            return headerView
+            let bannerView = UINib(nibName: "BannerView", bundle: nil).instantiateWithOwner(nil, options: nil).first as! BannerView
+            return bannerView
         }
         return nil
     }
