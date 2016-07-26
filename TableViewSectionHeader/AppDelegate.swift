@@ -8,15 +8,47 @@
 
 import UIKit
 
+protocol BannerDelegate: class {
+    func showBanner(needToShow: Bool)
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var reachability: Reachability?
+    
+    weak var bannerDelegate: BannerDelegate? = nil
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(AppDelegate.checkReachability(_:)), name: kReachabilityChangedNotification, object: nil)
+        
+        do {
+            self.reachability = try Reachability.reachabilityForInternetConnection()
+            try self.reachability!.startNotifier()
+        } catch {
+            print("REACHABILITY ERROR")
+        }
+        
         return true
+    }
+    
+    
+    func checkReachability(notification: NSNotification){
+        let networkReachability = notification.object as! Reachability;
+        let remoteHostStatus = networkReachability.currentReachabilityStatus
+        dispatch_async(dispatch_get_main_queue()) {
+            if (remoteHostStatus == .NotReachable) {
+                self.bannerDelegate?.showBanner(true)
+            } else {
+                self.bannerDelegate?.showBanner(false)
+            }
+            
+        }
     }
 
     func applicationWillResignActive(application: UIApplication) {

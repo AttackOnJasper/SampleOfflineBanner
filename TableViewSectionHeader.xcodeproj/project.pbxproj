@@ -12,6 +12,8 @@
 		ECA4C5E91D32E3D9005903F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA4C5E71D32E3D9005903F4 /* Main.storyboard */; };
 		ECA4C5EB1D32E3D9005903F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA4C5EA1D32E3D9005903F4 /* Assets.xcassets */; };
 		ECA4C5EE1D32E3D9005903F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA4C5EC1D32E3D9005903F4 /* LaunchScreen.storyboard */; };
+		ECA4C5F61D32E3FB005903F4 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA4C5F51D32E3FB005903F4 /* MyTableViewController.swift */; };
+		ECA4C5F81D32EEA2005903F4 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA4C5F71D32EEA2005903F4 /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		ECA4C5EA1D32E3D9005903F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECA4C5ED1D32E3D9005903F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECA4C5EF1D32E3D9005903F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECA4C5F51D32E3FB005903F4 /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
+		ECA4C5F71D32EEA2005903F4 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				ECA4C5EA1D32E3D9005903F4 /* Assets.xcassets */,
 				ECA4C5EC1D32E3D9005903F4 /* LaunchScreen.storyboard */,
 				ECA4C5EF1D32E3D9005903F4 /* Info.plist */,
+				ECA4C5F51D32E3FB005903F4 /* MyTableViewController.swift */,
+				ECA4C5F71D32EEA2005903F4 /* Reachability.swift */,
 			);
 			path = TableViewSectionHeader;
 			sourceTree = "<group>";
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECA4C5E61D32E3D9005903F4 /* ViewController.swift in Sources */,
+				ECA4C5F61D32E3FB005903F4 /* MyTableViewController.swift in Sources */,
+				ECA4C5F81D32EEA2005903F4 /* Reachability.swift in Sources */,
 				ECA4C5E41D32E3D9005903F4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
